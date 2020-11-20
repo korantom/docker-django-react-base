@@ -11,7 +11,10 @@ services:
       - ./backend:/workspace
       - ./backend:/app/backend
 
-    command: sleep infinity
+    ports:
+      - 8000:8000
+
+    command: /bin/sh -c /app/backend/run.sh
 
   frontend:
     container_name: frontend
