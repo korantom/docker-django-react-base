@@ -69,6 +69,27 @@
 
 ---
 
+## 3. Django backend
+### 3.1 Create Django project
+- Change to the root of your project directory.
+- ```$ll``` 
+  ```
+  README.md
+  backend
+  db
+  docker-compose.yml
+  frontend
+  ```
+- Build backend container
+  - ```$docker-compose build backend```
+- Create the Django project in docker:
+  - ```$sudo docker-compose run backend django-admin startproject backend /app/backend```
+    - This instructs Compose to execute the django-admin startproject command in the container.
+- If you are running Docker on Linux, the files django-admin created are owned by root. This happens because the container runs as the root user. Change the ownership of the new files.
+  - ```$sudo chown -R $USER:$USER .```
+
+---
+
 ## Useful links
 - **VS Code Remote Containers**
   - [developing inside a container](https://code.visualstudio.com/docs/remote/containers#_quick-start-open-an-existing-folder-in-a-container)
