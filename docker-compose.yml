@@ -16,6 +16,9 @@ services:
 
     command: /bin/sh -c /app/backend/run.sh
 
+    depends_on:
+      - db
+
   frontend:
     container_name: frontend
     build: 
@@ -30,5 +33,21 @@ services:
       context: ./db
       dockerfile: ./Dockerfile
 
-    command: sleep infinity
-  
+    restart: unless-stopped
+    
+      
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    
+    ports: 
+      - 5432:5432
+
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+      POSTGRES_PASSWORD: postgres
+
+
+
+volumes:
+  postgres-data:
