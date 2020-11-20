@@ -1,0 +1,14 @@
+{
+    "name": "Node & React",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "frontend",
+    "workspaceFolder": "/workspace",
+    "shutdownAction": "none",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+    },
+    "extensions": [
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.vscode-typescript-tslint-plugin"
+    ]
+}

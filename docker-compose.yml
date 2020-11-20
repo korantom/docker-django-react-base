@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+  backend:
+    container_name: backend
+    build: 
+      context: ./backend
+      dockerfile: ./Dockerfile
+    
+    volumes:
+      - ./backend:/workspace
+      - ./backend:/app/backend
+
+    command: sleep infinity
+
+  frontend:
+    container_name: frontend
+    build: 
+      context: ./frontend
+      dockerfile: ./Dockerfile
+    
+    command: sleep infinity
+
+  db:
+    container_name: db
+    build: 
+      context: ./db
+      dockerfile: ./Dockerfile
+
+    command: sleep infinity
+  
