@@ -59,6 +59,14 @@
     ```
 - TODO: Add description about Dockerfile and docker-compose
 
+- Test:
+  - ```$docker-compose up``` or ```>Docker: Compose Up```
+  - ```>Remote-Containers: Attach Shell```
+  - ```>Remote-Containers: Attach Visual Studio Code```
+    - doeesn't install VS Code server and set up workspace
+  - ```>Remote-Containers: Open Folder in Container```
+    - will install VS Code server and set up workspace according to .devcontainer.json in given folder
+
 ---
 
 ## Useful links
