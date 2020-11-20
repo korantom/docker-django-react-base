@@ -107,8 +107,42 @@
         }
     }
     ```
-- ```docker-compose up```
-- attach shell to backend and run ```python manage.py createsuperuser```
+- ```$docker-compose up```
+- attach shell to backend and run ```$python manage.py createsuperuser```
+
+### 3.3 create API using django rest framework
+- attach shell to backend and create a new django app called api 
+  - ```$python manage.py startapp api```
+- in backend/settings.py add 
+  - ```python
+    # settings.py
+    INSTALLED_APPS = [
+      ...
+      "rest_framework",
+      "api",
+    ]
+    ```
+- in api/models.py create your models
+  - "db tables, bud defined using python classes instead of sql"
+- make migrations and migrate after creating or altering any model
+  - ```$python manage.py makemigrations api```
+  - ```$python manage.py migrate```
+- create model serializers in api/serializers.py
+  - "class that can convert db entries to json and vice versa"
+- in api/viewsets.py create your viewsets (CRUD endpoints)
+  - "selection of db entries from one or more tables"
+
+- in backend/urls.py add 
+  ```python
+  # urls.py
+  urlpatterns = [
+    ...
+    path("", include("api.urls")),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+  ]
+  ```
+  - will allow to access other django apps within the project
+- restart container to access endpoints
 
 ---
 
