@@ -91,6 +91,25 @@
   - ```$docker-compose up```
   - [visit here](http://localhost:8000/)
 
+### 3.2 Set up postgres db and connect to django
+- Edit the backend/settings.py file, replace the DATABASES = ... with:
+  - ```python
+    # settings.py
+      
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'postgres',
+            'USER': 'postgres',
+            'PASSWORD': 'postgres',
+            'HOST': 'db',
+            'PORT': 5432,
+        }
+    }
+    ```
+- ```docker-compose up```
+- attach shell to backend and run ```python manage.py createsuperuser```
+
 ---
 
 ## Useful links
