@@ -156,6 +156,17 @@
 - **Docker**
   - [run django in docker](https://docs.docker.com/compose/django/)
 
+- **Example docker projects with multiple services**
+  - [nginx, django, postrges, redis](https://realpython.com/django-development-with-docker-compose-and-machine/)
+  - [Full Stack React & Django](https://www.youtube.com/playlist?list=PLillGF-RfqbbRA-CIUxlxkUpbq0IFkX60)
+
+- **Django**
+  - [Django crashcourse](https://www.youtube.com/watch?v=e1IyzVyrLSU)
+
+- **React**
+  - [ReactJs crashcourse](https://www.youtube.com/watch?v=sBws8MSXN7A)
+  - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en#:~:text=React%20Developer%20Tools%20is%20a,in%20the%20Chrome%20Developer%20Tools.&text=This%20extension%20requires%20permissions%20to,not%20transmit%20any%20data%20remotely.)
+  - [create-react-app](https://create-react-app.dev/docs/getting-started/)
 
 ---
 ### Hint
