@@ -5,7 +5,22 @@
     "workspaceFolder": "/workspace",
     "shutdownAction": "none",
     "settings": {
+        // general
         "terminal.integrated.shell.linux": "/bin/bash",
+        "editor.formatOnSave": true,
+        // python
+        "python.pythonPath": "/usr/local/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.formatting.provider": "black",
+        "python.formatting.autopep8Path": "/usr/local/bin/autopep8",
+        "python.formatting.blackPath": "/usr/local/bin/black",
+        "python.formatting.yapfPath": "/usr/local/bin/yapf",
+        "python.linting.pylintPath": "/usr/local/bin/pylint",
+        "python.linting.pylintArgs": [
+            "--load-plugins=pylint_django",
+        ],
+        "python.testing.pytestPath": "/usr/local/bin/pytest"
     },
     "extensions": [
         "ms-python.python",
