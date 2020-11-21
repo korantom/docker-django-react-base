@@ -146,6 +146,29 @@
 
 ---
 
+## 4. React frontend
+- npm, yarn, npx
+  - npm, yarn: package managers
+  - npm vs yarn
+    - yarn = faster better npm
+  - npm vs npx
+    - npm: for installing packages
+    - npx: tool for executing packages 
+
+### a) Create React app manualy
+- TODO: ...
+
+### b) Create React app using create-react-app tool
+- what is create-react-app:
+  - ...
+- Run set up scrip
+  - ```$sudo docker-compose run frontend bash setup.sh```
+- Test:
+  - ```$docker-compose up```
+  - [visit here](http://localhost:3000/)
+
+---
+
 ## Useful links
 - **VS Code Remote Containers**
   - [developing inside a container](https://code.visualstudio.com/docs/remote/containers#_quick-start-open-an-existing-folder-in-a-container)
@@ -166,7 +189,10 @@
 - **React**
   - [ReactJs crashcourse](https://www.youtube.com/watch?v=sBws8MSXN7A)
   - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en#:~:text=React%20Developer%20Tools%20is%20a,in%20the%20Chrome%20Developer%20Tools.&text=This%20extension%20requires%20permissions%20to,not%20transmit%20any%20data%20remotely.)
+  - [seting up a react project](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app)
   - [create-react-app](https://create-react-app.dev/docs/getting-started/)
+    - [fix nested git](https://stackoverflow.com/questions/60245594/how-to-fix-the-git-repo-if-i-accidentally-create-the-repo-with-a-submodule-sub)
+    - [cra-templates](https://www.npmjs.com/search?q=cra-template)
 
 ---
 ### Hint
