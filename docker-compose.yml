@@ -33,8 +33,7 @@ services:
     ports:
       - "3000:3000"
 
-    command: sleep infinity
-    # command: /bin/sh -c /app/frontend/run.sh
+    command: /bin/sh -c /app/frontend/run.sh
 
     depends_on:
       - backend
