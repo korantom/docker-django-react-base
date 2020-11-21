@@ -25,7 +25,19 @@ services:
       context: ./frontend
       dockerfile: ./Dockerfile
     
+    volumes:
+      - ./frontend:/workspace
+      - ./frontend:/app/frontend
+      - node-modules:/app/frontend/node_modules
+
+    ports:
+      - "3000:3000"
+
     command: sleep infinity
+    # command: /bin/sh -c /app/frontend/run.sh
+
+    depends_on:
+      - backend
 
   db:
     container_name: db
@@ -51,3 +63,4 @@ services:
 
 volumes:
   postgres-data:
+  node-modules:

@@ -6,9 +6,11 @@
     "shutdownAction": "none",
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash",
+        "editor.formatOnSave": true,
     },
     "extensions": [
         "dbaeumer.vscode-eslint",
-        "ms-vscode.vscode-typescript-tslint-plugin"
+        "ms-vscode.vscode-typescript-tslint-plugin",
+        "burkeholland.simple-react-snippets",
     ]
 }
